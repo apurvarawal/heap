@@ -1,0 +1,30 @@
+Time Complexity of Priority Queue for:
+
+-> insertion = O(logN)
+-> pop       = O(logN)
+-> get       = O(logN)
+
+What is a HEAP??
+
+-> Binary tree 
+-> Complete binary tree property (CBT)
+   ~ each node has a left and right child, only the leaf nodes can have one child, but in left to right direction 
+     , any hole in middle, then that tree will not be considered a heap.
+   ~ Examples: 
+                     1                                          1
+                2         3                                2          3
+            4       _ 6       7                         4      5  6        7
+            NOT a HEAP(because there is                 this is a HEAP
+                        a gap after 4.)
+-> Heap Order property
+   ~ Max Heap 
+    - Parent > Children
+   ~ Min Heap
+    - Parent < Children
+
+Any complete binary tree can be stored in the form an array. With the parent at 'i' index and left child at '2i'
+and right child at '2i+1'.
+
+Since the time complexity for inserting elements in the last in an array is O(1), therefore we will visualize heap 
+in the form of a tree, but execute in the form of an array.
+
